@@ -4,14 +4,17 @@ import { useState } from "react";
 const links = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
-  { to: "/leadership", label: "Leadership" },
-  { to: "/businesses", label: "Businesses" },
-  { to: "/investments", label: "Investments" },
+  { to: "/businesses", label: "Strategy" },
+  { to: "/investments", label: "Holdings" },
   { to: "/insights", label: "Insights" },
-  { to: "/responsibility", label: "Responsibility" },
   { to: "/investors", label: "Investors" },
-  { to: "/careers", label: "Careers" },
   { to: "/contact", label: "Contact" },
+] as const;
+
+const utilityLinks = [
+  { to: "/leadership", label: "Leadership" },
+  { to: "/responsibility", label: "Responsibility" },
+  { to: "/careers", label: "Careers" },
 ] as const;
 
 export function Header() {
