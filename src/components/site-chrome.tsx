@@ -24,7 +24,6 @@ export function Header() {
       <div className="flex items-center justify-between px-5 h-14">
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <span className="font-display text-xl tracking-tight text-primary">Mirandil</span>
-          <span className="gold-line" />
           <span className="font-mono text-[10px] tracking-[0.2em] text-muted-foreground uppercase">Capital</span>
         </Link>
         <button
@@ -39,20 +38,16 @@ export function Header() {
       </div>
       {open && (
         <nav className="border-t border-border bg-background">
-          <ul className="px-5 py-4 space-y-0">
-            {links.map((l, i) => (
+          <ul className="px-5 py-2">
+            {links.map((l) => (
               <li key={l.to} className="border-b border-border/60 last:border-0">
                 <Link
                   to={l.to}
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-between py-3.5 text-foreground"
-                  activeProps={{ className: "flex items-center justify-between py-3.5 text-gold" }}
+                  className="block py-3.5 font-display text-lg text-foreground"
+                  activeProps={{ className: "block py-3.5 font-display text-lg text-gold" }}
                 >
-                  <span className="flex items-center gap-3">
-                    <span className="font-mono text-[10px] text-muted-foreground">{String(i + 1).padStart(2, "0")}</span>
-                    <span className="font-display text-xl">{l.label}</span>
-                  </span>
-                  <span className="text-muted-foreground">→</span>
+                  {l.label}
                 </Link>
               </li>
             ))}
@@ -69,7 +64,6 @@ export function Footer() {
       <div className="px-5 py-14">
         <div className="flex items-center gap-2 mb-8">
           <span className="font-display text-2xl">Mirandil</span>
-          <span className="gold-line" />
           <span className="font-mono text-[10px] tracking-[0.2em] uppercase opacity-60">Capital</span>
         </div>
         <p className="font-display text-2xl leading-snug mb-10 text-white/95">
