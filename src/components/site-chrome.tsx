@@ -65,32 +65,52 @@ export function Header() {
 
 export function Footer() {
   return (
-    <footer className="mt-20 bg-primary text-primary-foreground">
-      <div className="px-5 py-12">
-        <div className="flex items-center gap-2 mb-6">
+    <footer className="mt-20 bg-ink text-white">
+      <div className="px-5 py-14">
+        <div className="flex items-center gap-2 mb-8">
           <span className="font-display text-2xl">S25</span>
           <span className="gold-line" />
-          <span className="font-mono text-[10px] tracking-[0.2em] uppercase opacity-70">Capital</span>
+          <span className="font-mono text-[10px] tracking-[0.2em] uppercase opacity-60">Capital</span>
         </div>
-        <p className="font-display text-2xl leading-snug mb-8">
+        <p className="font-display text-2xl leading-snug mb-10 text-white/95">
           Stewards of capital.<br />Builders of enduring value.
         </p>
-        <div className="grid grid-cols-2 gap-y-3 gap-x-4 text-sm mb-10">
-          {links.slice(1).map((l) => (
-            <Link key={l.to} to={l.to} className="opacity-80 hover:opacity-100">
-              {l.label}
-            </Link>
-          ))}
+
+        <div className="border-t border-white/10 pt-6 mb-8">
+          <div className="font-mono text-[10px] tracking-[0.2em] uppercase opacity-50 mb-4">
+            Explore
+          </div>
+          <div className="grid grid-cols-2 gap-y-3.5 gap-x-4 text-sm">
+            {links.slice(1).map((l) => (
+              <Link key={l.to} to={l.to} className="text-white/80 hover:text-white">
+                {l.label}
+              </Link>
+            ))}
+          </div>
         </div>
-        <div className="border-t border-primary-foreground/20 pt-6 space-y-2">
-          <p className="font-mono text-[10px] tracking-[0.15em] uppercase opacity-60">
+
+        <div className="border-t border-white/10 pt-6 mb-10">
+          <div className="font-mono text-[10px] tracking-[0.2em] uppercase opacity-50 mb-4">
+            Company
+          </div>
+          <div className="grid grid-cols-2 gap-y-3.5 gap-x-4 text-sm">
+            {utilityLinks.map((l) => (
+              <Link key={l.to} to={l.to} className="text-white/70 hover:text-white">
+                {l.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        <div className="border-t border-white/10 pt-6 space-y-2">
+          <p className="font-mono text-[10px] tracking-[0.15em] uppercase opacity-50">
             S25 Capital Holdings, Inc.
           </p>
-          <p className="text-xs opacity-60">
+          <p className="text-xs opacity-55">
             One Reserve Plaza, 25th Floor<br />
             New York, NY 10004
           </p>
-          <p className="text-xs opacity-50 pt-4">
+          <p className="text-xs opacity-40 pt-4">
             © {new Date().getFullYear()} S25 Capital. All rights reserved. Member FINRA / SIPC.
           </p>
         </div>
@@ -98,3 +118,4 @@ export function Footer() {
     </footer>
   );
 }
+
