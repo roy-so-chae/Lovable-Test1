@@ -38,20 +38,16 @@ export function Header() {
       </div>
       {open && (
         <nav className="border-t border-border bg-background">
-          <ul className="px-5 py-4 space-y-0">
-            {links.map((l, i) => (
+          <ul className="px-5 py-2">
+            {links.map((l) => (
               <li key={l.to} className="border-b border-border/60 last:border-0">
                 <Link
                   to={l.to}
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-between py-3.5 text-foreground"
-                  activeProps={{ className: "flex items-center justify-between py-3.5 text-gold" }}
+                  className="block py-3.5 font-display text-lg text-foreground"
+                  activeProps={{ className: "block py-3.5 font-display text-lg text-gold" }}
                 >
-                  <span className="flex items-center gap-3">
-                    <span className="font-mono text-[10px] text-muted-foreground">{String(i + 1).padStart(2, "0")}</span>
-                    <span className="font-display text-xl">{l.label}</span>
-                  </span>
-                  <span className="text-muted-foreground">→</span>
+                  {l.label}
                 </Link>
               </li>
             ))}
