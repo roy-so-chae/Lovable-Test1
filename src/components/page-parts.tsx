@@ -4,10 +4,12 @@ import { Header, Footer } from "./site-chrome";
 
 export function PageShell({ children }: { children: ReactNode }) {
   return (
-    <div className="min-h-screen flex flex-col bg-background">
-      <Header />
-      <main className="flex-1">{children}</main>
-      <Footer />
+    <div className="min-h-screen bg-muted md:py-6">
+      <div className="mx-auto flex min-h-screen md:min-h-[calc(100vh-3rem)] max-w-[440px] flex-col bg-background md:shadow-2xl md:border md:border-border">
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </div>
     </div>
   );
 }
