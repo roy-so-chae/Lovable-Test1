@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as ResponsibilityRouteImport } from './routes/responsibility'
 import { Route as LeadershipRouteImport } from './routes/leadership'
 import { Route as InvestorsRouteImport } from './routes/investors'
@@ -20,6 +21,11 @@ import { Route as BusinessesRouteImport } from './routes/businesses'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ResponsibilityRoute = ResponsibilityRouteImport.update({
   id: '/responsibility',
   path: '/responsibility',
@@ -82,6 +88,7 @@ export interface FileRoutesByFullPath {
   '/investors': typeof InvestorsRoute
   '/leadership': typeof LeadershipRoute
   '/responsibility': typeof ResponsibilityRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -94,6 +101,7 @@ export interface FileRoutesByTo {
   '/investors': typeof InvestorsRoute
   '/leadership': typeof LeadershipRoute
   '/responsibility': typeof ResponsibilityRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -107,6 +115,7 @@ export interface FileRoutesById {
   '/investors': typeof InvestorsRoute
   '/leadership': typeof LeadershipRoute
   '/responsibility': typeof ResponsibilityRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -121,6 +130,7 @@ export interface FileRouteTypes {
     | '/investors'
     | '/leadership'
     | '/responsibility'
+    | '/sitemap.xml'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -133,6 +143,7 @@ export interface FileRouteTypes {
     | '/investors'
     | '/leadership'
     | '/responsibility'
+    | '/sitemap.xml'
   id:
     | '__root__'
     | '/'
@@ -145,6 +156,7 @@ export interface FileRouteTypes {
     | '/investors'
     | '/leadership'
     | '/responsibility'
+    | '/sitemap.xml'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -158,10 +170,18 @@ export interface RootRouteChildren {
   InvestorsRoute: typeof InvestorsRoute
   LeadershipRoute: typeof LeadershipRoute
   ResponsibilityRoute: typeof ResponsibilityRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/responsibility': {
       id: '/responsibility'
       path: '/responsibility'
@@ -246,6 +266,7 @@ const rootRouteChildren: RootRouteChildren = {
   InvestorsRoute: InvestorsRoute,
   LeadershipRoute: LeadershipRoute,
   ResponsibilityRoute: ResponsibilityRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
