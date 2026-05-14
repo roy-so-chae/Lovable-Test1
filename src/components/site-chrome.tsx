@@ -64,7 +64,6 @@ export function Footer() {
       <div className="px-5 py-14">
         <div className="flex items-center gap-2 mb-8">
           <span className="font-display text-2xl">Mirandil</span>
-          <span className="gold-line" />
           <span className="font-mono text-[10px] tracking-[0.2em] uppercase opacity-60">Capital</span>
         </div>
         <p className="font-display text-2xl leading-snug mb-10 text-white/95">
