@@ -117,3 +117,11 @@
   background-image: radial-gradient(circle at 1px 1px, var(--color-border) 1px, transparent 0);
   background-size: 24px 24px;
 }
+
+@keyframes kenburns {
+  0%   { transform: scale(1.05) translate(0, 0); }
+  100% { transform: scale(1.18) translate(-2%, -2%); }
+}
+.ken-burns {
+  animation: kenburns 18s ease-out both infinite alternate;
+}
