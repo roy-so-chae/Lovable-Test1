@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as ResponsibilityRouteImport } from './routes/responsibility'
 import { Route as LeadershipRouteImport } from './routes/leadership'
+import { Route as InvestorsRouteImport } from './routes/investors'
 import { Route as InvestmentsRouteImport } from './routes/investments'
 import { Route as InsightsRouteImport } from './routes/insights'
 import { Route as BusinessesRouteImport } from './routes/businesses'
@@ -25,6 +26,11 @@ const ResponsibilityRoute = ResponsibilityRouteImport.update({
 const LeadershipRoute = LeadershipRouteImport.update({
   id: '/leadership',
   path: '/leadership',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InvestorsRoute = InvestorsRouteImport.update({
+  id: '/investors',
+  path: '/investors',
   getParentRoute: () => rootRouteImport,
 } as any)
 const InvestmentsRoute = InvestmentsRouteImport.update({
@@ -59,6 +65,7 @@ export interface FileRoutesByFullPath {
   '/businesses': typeof BusinessesRoute
   '/insights': typeof InsightsRoute
   '/investments': typeof InvestmentsRoute
+  '/investors': typeof InvestorsRoute
   '/leadership': typeof LeadershipRoute
   '/responsibility': typeof ResponsibilityRoute
 }
@@ -68,6 +75,7 @@ export interface FileRoutesByTo {
   '/businesses': typeof BusinessesRoute
   '/insights': typeof InsightsRoute
   '/investments': typeof InvestmentsRoute
+  '/investors': typeof InvestorsRoute
   '/leadership': typeof LeadershipRoute
   '/responsibility': typeof ResponsibilityRoute
 }
@@ -78,6 +86,7 @@ export interface FileRoutesById {
   '/businesses': typeof BusinessesRoute
   '/insights': typeof InsightsRoute
   '/investments': typeof InvestmentsRoute
+  '/investors': typeof InvestorsRoute
   '/leadership': typeof LeadershipRoute
   '/responsibility': typeof ResponsibilityRoute
 }
@@ -89,6 +98,7 @@ export interface FileRouteTypes {
     | '/businesses'
     | '/insights'
     | '/investments'
+    | '/investors'
     | '/leadership'
     | '/responsibility'
   fileRoutesByTo: FileRoutesByTo
@@ -98,6 +108,7 @@ export interface FileRouteTypes {
     | '/businesses'
     | '/insights'
     | '/investments'
+    | '/investors'
     | '/leadership'
     | '/responsibility'
   id:
@@ -107,6 +118,7 @@ export interface FileRouteTypes {
     | '/businesses'
     | '/insights'
     | '/investments'
+    | '/investors'
     | '/leadership'
     | '/responsibility'
   fileRoutesById: FileRoutesById
@@ -117,6 +129,7 @@ export interface RootRouteChildren {
   BusinessesRoute: typeof BusinessesRoute
   InsightsRoute: typeof InsightsRoute
   InvestmentsRoute: typeof InvestmentsRoute
+  InvestorsRoute: typeof InvestorsRoute
   LeadershipRoute: typeof LeadershipRoute
   ResponsibilityRoute: typeof ResponsibilityRoute
 }
@@ -135,6 +148,13 @@ declare module '@tanstack/react-router' {
       path: '/leadership'
       fullPath: '/leadership'
       preLoaderRoute: typeof LeadershipRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/investors': {
+      id: '/investors'
+      path: '/investors'
+      fullPath: '/investors'
+      preLoaderRoute: typeof InvestorsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/investments': {
@@ -181,6 +201,7 @@ const rootRouteChildren: RootRouteChildren = {
   BusinessesRoute: BusinessesRoute,
   InsightsRoute: InsightsRoute,
   InvestmentsRoute: InvestmentsRoute,
+  InvestorsRoute: InvestorsRoute,
   LeadershipRoute: LeadershipRoute,
   ResponsibilityRoute: ResponsibilityRoute,
 }
