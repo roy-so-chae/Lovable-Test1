@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as LeadershipRouteImport } from './routes/leadership'
 import { Route as InvestmentsRouteImport } from './routes/investments'
+import { Route as InsightsRouteImport } from './routes/insights'
 import { Route as BusinessesRouteImport } from './routes/businesses'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -23,6 +24,11 @@ const LeadershipRoute = LeadershipRouteImport.update({
 const InvestmentsRoute = InvestmentsRouteImport.update({
   id: '/investments',
   path: '/investments',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InsightsRoute = InsightsRouteImport.update({
+  id: '/insights',
+  path: '/insights',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BusinessesRoute = BusinessesRouteImport.update({
@@ -45,6 +51,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/businesses': typeof BusinessesRoute
+  '/insights': typeof InsightsRoute
   '/investments': typeof InvestmentsRoute
   '/leadership': typeof LeadershipRoute
 }
@@ -52,6 +59,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/businesses': typeof BusinessesRoute
+  '/insights': typeof InsightsRoute
   '/investments': typeof InvestmentsRoute
   '/leadership': typeof LeadershipRoute
 }
@@ -60,19 +68,33 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/businesses': typeof BusinessesRoute
+  '/insights': typeof InsightsRoute
   '/investments': typeof InvestmentsRoute
   '/leadership': typeof LeadershipRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/businesses' | '/investments' | '/leadership'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/businesses'
+    | '/insights'
+    | '/investments'
+    | '/leadership'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/businesses' | '/investments' | '/leadership'
+  to:
+    | '/'
+    | '/about'
+    | '/businesses'
+    | '/insights'
+    | '/investments'
+    | '/leadership'
   id:
     | '__root__'
     | '/'
     | '/about'
     | '/businesses'
+    | '/insights'
     | '/investments'
     | '/leadership'
   fileRoutesById: FileRoutesById
@@ -81,6 +103,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   BusinessesRoute: typeof BusinessesRoute
+  InsightsRoute: typeof InsightsRoute
   InvestmentsRoute: typeof InvestmentsRoute
   LeadershipRoute: typeof LeadershipRoute
 }
@@ -99,6 +122,13 @@ declare module '@tanstack/react-router' {
       path: '/investments'
       fullPath: '/investments'
       preLoaderRoute: typeof InvestmentsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/insights': {
+      id: '/insights'
+      path: '/insights'
+      fullPath: '/insights'
+      preLoaderRoute: typeof InsightsRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/businesses': {
@@ -129,6 +159,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   BusinessesRoute: BusinessesRoute,
+  InsightsRoute: InsightsRoute,
   InvestmentsRoute: InvestmentsRoute,
   LeadershipRoute: LeadershipRoute,
 }
