@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ResponsibilityRouteImport } from './routes/responsibility'
 import { Route as LeadershipRouteImport } from './routes/leadership'
 import { Route as InvestmentsRouteImport } from './routes/investments'
 import { Route as InsightsRouteImport } from './routes/insights'
@@ -16,6 +17,11 @@ import { Route as BusinessesRouteImport } from './routes/businesses'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
+const ResponsibilityRoute = ResponsibilityRouteImport.update({
+  id: '/responsibility',
+  path: '/responsibility',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const LeadershipRoute = LeadershipRouteImport.update({
   id: '/leadership',
   path: '/leadership',
@@ -54,6 +60,7 @@ export interface FileRoutesByFullPath {
   '/insights': typeof InsightsRoute
   '/investments': typeof InvestmentsRoute
   '/leadership': typeof LeadershipRoute
+  '/responsibility': typeof ResponsibilityRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -62,6 +69,7 @@ export interface FileRoutesByTo {
   '/insights': typeof InsightsRoute
   '/investments': typeof InvestmentsRoute
   '/leadership': typeof LeadershipRoute
+  '/responsibility': typeof ResponsibilityRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -71,6 +79,7 @@ export interface FileRoutesById {
   '/insights': typeof InsightsRoute
   '/investments': typeof InvestmentsRoute
   '/leadership': typeof LeadershipRoute
+  '/responsibility': typeof ResponsibilityRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -81,6 +90,7 @@ export interface FileRouteTypes {
     | '/insights'
     | '/investments'
     | '/leadership'
+    | '/responsibility'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -89,6 +99,7 @@ export interface FileRouteTypes {
     | '/insights'
     | '/investments'
     | '/leadership'
+    | '/responsibility'
   id:
     | '__root__'
     | '/'
@@ -97,6 +108,7 @@ export interface FileRouteTypes {
     | '/insights'
     | '/investments'
     | '/leadership'
+    | '/responsibility'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -106,10 +118,18 @@ export interface RootRouteChildren {
   InsightsRoute: typeof InsightsRoute
   InvestmentsRoute: typeof InvestmentsRoute
   LeadershipRoute: typeof LeadershipRoute
+  ResponsibilityRoute: typeof ResponsibilityRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/responsibility': {
+      id: '/responsibility'
+      path: '/responsibility'
+      fullPath: '/responsibility'
+      preLoaderRoute: typeof ResponsibilityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/leadership': {
       id: '/leadership'
       path: '/leadership'
@@ -162,6 +182,7 @@ const rootRouteChildren: RootRouteChildren = {
   InsightsRoute: InsightsRoute,
   InvestmentsRoute: InvestmentsRoute,
   LeadershipRoute: LeadershipRoute,
+  ResponsibilityRoute: ResponsibilityRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
