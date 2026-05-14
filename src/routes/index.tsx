@@ -52,34 +52,66 @@ const navCards = [
 function HomePage() {
   return (
     <PageShell>
-      {/* Hero */}
-      <section className="px-5 pt-12 pb-10 fade-in">
-        <Eyebrow num="00">Established 1987</Eyebrow>
-        <h1 className="font-display text-[48px] leading-[0.98] tracking-tight text-primary">
-          위험을 먼저 본다.
-          <br />
-          <span className="italic text-gold">우량</span>만 남긴다.
-        </h1>
-        <p className="mt-7 text-base leading-relaxed text-muted-foreground">
-          AI가 전세계 위험을 감지합니다. 신호가 켜지면 우량 자산을 팔고
-          달러를 보유합니다. 위험이 지나가면 다시 매수합니다.
-          단 세 자산 — <span className="text-foreground font-medium">USD · QQQ · SPY</span> 만 다룹니다.
-        </p>
-        <div className="mt-8 flex items-center gap-4">
-          <Link
-            to="/businesses"
-            className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-6 py-4 text-sm font-medium tracking-wide"
-          >
-            전략 보기 <span>→</span>
-          </Link>
-          <Link to="/investors" className="text-sm font-medium underline underline-offset-4 decoration-gold">
-            Investor Relations
-          </Link>
+      {/* Cinematic Hero */}
+      <section className="relative h-[88vh] min-h-[640px] overflow-hidden bg-ink fade-in">
+        <div className="absolute inset-0">
+          <img
+            src={heroImage}
+            alt=""
+            className="w-full h-full object-cover ken-burns"
+            style={{ filter: "grayscale(15%) contrast(108%) brightness(0.75)" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/85" />
+        </div>
+
+        <div className="relative h-full flex flex-col justify-between p-6 text-white">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <span className="font-mono text-[10px] tracking-[0.3em] uppercase opacity-80">
+                Established 1987
+              </span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-70" />
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-gold" />
+              </span>
+              <span className="font-mono text-[10px] tracking-[0.25em] uppercase opacity-80">
+                Live
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-gold mb-4">
+              AI Risk Engine · Since 1987
+            </div>
+            <h1 className="font-display text-[44px] leading-[0.98] tracking-tight">
+              위험을 먼저 본다.
+              <br />
+              <span className="italic text-gold">우량</span>만 남긴다.
+            </h1>
+            <p className="mt-5 text-sm leading-relaxed opacity-85 max-w-[340px]">
+              AI가 전세계 위험을 24시간 감지합니다. 신호가 켜지면 우량 자산을 팔고
+              달러로 후퇴, 위험이 지나가면 다시 매수합니다.
+            </p>
+            <div className="mt-6 flex items-center gap-4">
+              <Link
+                to="/businesses"
+                className="inline-flex items-center gap-3 bg-white text-ink px-5 py-3 text-sm font-medium tracking-wide"
+              >
+                전략 보기 <span>→</span>
+              </Link>
+              <span className="font-mono text-[10px] tracking-[0.25em] uppercase opacity-70">
+                USD · QQQ · SPY
+              </span>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* Signal panel — 현재 상태 */}
-      <section className="mx-5 bg-primary text-primary-foreground relative overflow-hidden">
+      <section className="mx-5 mt-8 bg-primary text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 bg-pattern opacity-[0.06]" />
         <div className="relative p-6">
           <div className="flex items-center justify-between mb-6">
