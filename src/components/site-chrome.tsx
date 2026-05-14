@@ -24,7 +24,6 @@ export function Header() {
       <div className="flex items-center justify-between px-5 h-14">
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <span className="font-display text-xl tracking-tight text-primary">Mirandil</span>
-          <span className="gold-line" />
           <span className="font-mono text-[10px] tracking-[0.2em] text-muted-foreground uppercase">Capital</span>
         </Link>
         <button
