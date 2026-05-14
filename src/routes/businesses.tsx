@@ -4,7 +4,7 @@ import { PageShell, PageHeader, NextPage, Eyebrow, Stat } from "@/components/pag
 export const Route = createFileRoute("/businesses")({
   head: () => ({
     meta: [
-      { title: "Businesses — S25 Capital" },
+      { title: "Businesses — Mirandil Capital" },
       { name: "description", content: "Five operating sectors, each held with the same long-term discipline." },
     ],
   }),

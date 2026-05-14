@@ -4,7 +4,7 @@ import { PageShell, Eyebrow } from "@/components/page-parts";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "S25 Capital — AI-Driven Risk Detection. Quality Assets, Preserved." },
+      { title: "Mirandil Capital — AI-Driven Risk Detection. Quality Assets, Preserved." },
       {
         name: "description",
         content:

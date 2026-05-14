@@ -4,7 +4,7 @@ import { PageShell, PageHeader, NextPage, Eyebrow, Stat } from "@/components/pag
 export const Route = createFileRoute("/responsibility")({
   head: () => ({
     meta: [
-      { title: "Responsibility — S25 Capital" },
+      { title: "Responsibility — Mirandil Capital" },
       { name: "description", content: "Our approach to governance, sustainability, and the communities we serve." },
     ],
   }),
@@ -18,7 +18,7 @@ function ResponsibilityPage() {
         num="06"
         eyebrow="Responsibility"
         title="Capital with conscience."
-        lede="A long-term investor cannot be indifferent to the world its capital helps build. Stewardship is not a department at S25 — it is the work itself."
+        lede="A long-term investor cannot be indifferent to the world its capital helps build. Stewardship is not a department at Mirandil — it is the work itself."
       />
 
       <section className="px-5 py-12">
@@ -38,7 +38,7 @@ function ResponsibilityPage() {
             {
               n: "03",
               t: "Communities",
-              d: "Through the S25 Foundation, $1.2B granted since 1995 to education, civic infrastructure, and emergency relief.",
+              d: "Through the Mirandil Foundation, $1.2B granted since 1995 to education, civic infrastructure, and emergency relief.",
             },
             {
               n: "04",

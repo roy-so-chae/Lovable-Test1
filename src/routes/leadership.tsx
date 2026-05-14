@@ -4,17 +4,17 @@ import { PageShell, PageHeader, NextPage, Eyebrow } from "@/components/page-part
 export const Route = createFileRoute("/leadership")({
   head: () => ({
     meta: [
-      { title: "Leadership — S25 Capital" },
-      { name: "description", content: "Meet the executive committee and board of directors of S25 Capital." },
+      { title: "Leadership — Mirandil Capital" },
+      { name: "description", content: "Meet the executive committee and board of directors of Mirandil Capital." },
     ],
   }),
   component: LeadershipPage,
 });
 
 const execs = [
-  { name: "Margaret H. Whitfield", role: "Chair & Chief Executive Officer", tenure: "Since 2019", bio: "Joined S25 in 1998. Previously head of Reinsurance Group. Trustee, Carnegie Endowment." },
-  { name: "Jonathan A. Reyes", role: "President & Chief Operating Officer", tenure: "Since 2021", bio: "Twenty-three years at S25 across banking and asset management. Wharton MBA." },
-  { name: "Ines Brunelli", role: "Chief Financial Officer", tenure: "Since 2020", bio: "Former Partner, McKinsey & Co. Joined S25 to lead capital allocation discipline." },
+  { name: "Margaret H. Whitfield", role: "Chair & Chief Executive Officer", tenure: "Since 2019", bio: "Joined Mirandil in 1998. Previously head of Reinsurance Group. Trustee, Carnegie Endowment." },
+  { name: "Jonathan A. Reyes", role: "President & Chief Operating Officer", tenure: "Since 2021", bio: "Twenty-three years at Mirandil across banking and asset management. Wharton MBA." },
+  { name: "Ines Brunelli", role: "Chief Financial Officer", tenure: "Since 2020", bio: "Former Partner, McKinsey & Co. Joined Mirandil to lead capital allocation discipline." },
   { name: "David Okonkwo", role: "Chief Investment Officer", tenure: "Since 2017", bio: "Oversees $312B of public and private market portfolios. Author, 'The Patient Mandate.'" },
   { name: "Helena Park", role: "General Counsel", tenure: "Since 2018", bio: "Former Assistant U.S. Attorney, S.D.N.Y. Yale Law School, 2002." },
   { name: "Thomas Reinhardt", role: "Chief Risk Officer", tenure: "Since 2022", bio: "Three decades in insurance underwriting and enterprise risk management." },

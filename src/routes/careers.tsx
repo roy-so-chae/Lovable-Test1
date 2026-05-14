@@ -4,7 +4,7 @@ import { PageShell, PageHeader, NextPage, Eyebrow, Quote } from "@/components/pa
 export const Route = createFileRoute("/careers")({
   head: () => ({
     meta: [
-      { title: "Careers — S25 Capital" },
+      { title: "Careers — Mirandil Capital" },
       { name: "description", content: "Join a firm built on judgment, character, and the long view." },
     ],
   }),
@@ -17,7 +17,7 @@ const roles = [
   ["Risk Analyst", "Omaha, NE", "Enterprise Risk"],
   ["Trust Officer", "Boston, MA", "Heritage Trust"],
   ["Software Engineer, Treasury Systems", "New York, NY", "Technology"],
-  ["Foundation Program Director", "New York, NY", "S25 Foundation"],
+  ["Foundation Program Director", "New York, NY", "Mirandil Foundation"],
 ];
 
 function CareersPage() {
@@ -32,7 +32,7 @@ function CareersPage() {
 
       <section className="px-5 py-12 bg-cream border-y border-border">
         <Quote
-          text="At S25 the work is patient, the standards are high, and the people stay. I joined as an analyst in 1999 and have never had a reason to leave."
+          text="At Mirandil the work is patient, the standards are high, and the people stay. I joined as an analyst in 1999 and have never had a reason to leave."
           author="David Okonkwo"
           role="Chief Investment Officer"
         />
@@ -80,7 +80,7 @@ function CareersPage() {
           ))}
         </div>
         <p className="text-xs opacity-50 mt-8 leading-relaxed">
-          S25 Capital is an equal opportunity employer. We hire on the basis of judgment,
+          Mirandil Capital is an equal opportunity employer. We hire on the basis of judgment,
           character, and the work — and on no other basis.
         </p>
       </section>
