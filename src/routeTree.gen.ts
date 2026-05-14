@@ -14,6 +14,7 @@ import { Route as LeadershipRouteImport } from './routes/leadership'
 import { Route as InvestorsRouteImport } from './routes/investors'
 import { Route as InvestmentsRouteImport } from './routes/investments'
 import { Route as InsightsRouteImport } from './routes/insights'
+import { Route as CareersRouteImport } from './routes/careers'
 import { Route as BusinessesRouteImport } from './routes/businesses'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
@@ -43,6 +44,11 @@ const InsightsRoute = InsightsRouteImport.update({
   path: '/insights',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CareersRoute = CareersRouteImport.update({
+  id: '/careers',
+  path: '/careers',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BusinessesRoute = BusinessesRouteImport.update({
   id: '/businesses',
   path: '/businesses',
@@ -63,6 +69,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/businesses': typeof BusinessesRoute
+  '/careers': typeof CareersRoute
   '/insights': typeof InsightsRoute
   '/investments': typeof InvestmentsRoute
   '/investors': typeof InvestorsRoute
@@ -73,6 +80,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/businesses': typeof BusinessesRoute
+  '/careers': typeof CareersRoute
   '/insights': typeof InsightsRoute
   '/investments': typeof InvestmentsRoute
   '/investors': typeof InvestorsRoute
@@ -84,6 +92,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/businesses': typeof BusinessesRoute
+  '/careers': typeof CareersRoute
   '/insights': typeof InsightsRoute
   '/investments': typeof InvestmentsRoute
   '/investors': typeof InvestorsRoute
@@ -96,6 +105,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/businesses'
+    | '/careers'
     | '/insights'
     | '/investments'
     | '/investors'
@@ -106,6 +116,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/businesses'
+    | '/careers'
     | '/insights'
     | '/investments'
     | '/investors'
@@ -116,6 +127,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/businesses'
+    | '/careers'
     | '/insights'
     | '/investments'
     | '/investors'
@@ -127,6 +139,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   BusinessesRoute: typeof BusinessesRoute
+  CareersRoute: typeof CareersRoute
   InsightsRoute: typeof InsightsRoute
   InvestmentsRoute: typeof InvestmentsRoute
   InvestorsRoute: typeof InvestorsRoute
@@ -171,6 +184,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof InsightsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/careers': {
+      id: '/careers'
+      path: '/careers'
+      fullPath: '/careers'
+      preLoaderRoute: typeof CareersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/businesses': {
       id: '/businesses'
       path: '/businesses'
@@ -199,6 +219,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   BusinessesRoute: BusinessesRoute,
+  CareersRoute: CareersRoute,
   InsightsRoute: InsightsRoute,
   InvestmentsRoute: InvestmentsRoute,
   InvestorsRoute: InvestorsRoute,
