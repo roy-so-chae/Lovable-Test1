@@ -1,6 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell, Eyebrow } from "@/components/page-parts";
-import heroImage from "@/assets/hero-risk.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -52,61 +51,43 @@ const navCards = [
 function HomePage() {
   return (
     <PageShell>
-      {/* Cinematic Hero */}
-      <section className="relative h-[88vh] min-h-[640px] overflow-hidden bg-ink fade-in">
-        <div className="absolute inset-0">
-          <img
-            src={heroImage}
-            alt=""
-            className="w-full h-full object-cover ken-burns"
-            style={{ filter: "grayscale(15%) contrast(108%) brightness(0.75)" }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/85" />
+      {/* Hero */}
+      <section className="px-5 pt-12 pb-10 fade-in">
+        <div className="flex items-center justify-between mb-8">
+          <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
+            Established 1987
+          </span>
+          <div className="flex items-center gap-2">
+            <span className="relative flex h-2 w-2">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-70" />
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-gold" />
+            </span>
+            <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-muted-foreground">
+              Live
+            </span>
+          </div>
         </div>
 
-        <div className="relative h-full flex flex-col justify-between p-6 text-white">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <span className="font-mono text-[10px] tracking-[0.3em] uppercase opacity-80">
-                Established 1987
-              </span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-gold opacity-70" />
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-gold" />
-              </span>
-              <span className="font-mono text-[10px] tracking-[0.25em] uppercase opacity-80">
-                Live
-              </span>
-            </div>
-          </div>
-
-          <div>
-            <div className="font-mono text-[10px] tracking-[0.3em] uppercase text-gold mb-4">
-              AI Risk Engine · Since 1987
-            </div>
-            <h1 className="font-display text-[44px] leading-[0.98] tracking-tight">
-              See risk first.
-              <br />
-              Hold only <span className="italic text-gold">quality</span>.
-            </h1>
-            <p className="mt-5 text-sm leading-relaxed opacity-85 max-w-[340px]">
-              Our AI watches global risk around the clock. When the signal triggers,
-              we move to cash. When it clears, we return to quality.
-            </p>
-            <div className="mt-6 flex items-center gap-4">
-              <Link
-                to="/businesses"
-                className="inline-flex items-center gap-3 bg-white text-ink px-5 py-3 text-sm font-medium tracking-wide"
-              >
-                Our Strategy <span>→</span>
-              </Link>
-              <span className="font-mono text-[10px] tracking-[0.25em] uppercase opacity-70">
-                USD · QQQ · SPY
-              </span>
-            </div>
-          </div>
+        <Eyebrow num="00">AI Risk Engine</Eyebrow>
+        <h1 className="font-display text-[44px] leading-[1.02] tracking-tight text-primary">
+          See risk first.
+          <br />
+          Hold only <span className="italic text-gold">quality</span>.
+        </h1>
+        <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+          Our AI watches global risk around the clock. When the signal triggers,
+          we move to cash. When it clears, we return to quality.
+        </p>
+        <div className="mt-8 flex items-center gap-4">
+          <Link
+            to="/businesses"
+            className="inline-flex items-center gap-3 bg-primary text-primary-foreground px-5 py-3 text-sm font-medium tracking-wide"
+          >
+            Our Strategy <span>→</span>
+          </Link>
+          <span className="font-mono text-[10px] tracking-[0.25em] uppercase text-muted-foreground">
+            USD · QQQ · SPY
+          </span>
         </div>
       </section>
 
