@@ -23,7 +23,7 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
       <div className="flex items-center justify-between px-5 h-14">
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <span className="font-display text-xl tracking-tight text-primary">S25</span>
+          <span className="font-display text-xl tracking-tight text-primary">Mirandil</span>
           <span className="gold-line" />
           <span className="font-mono text-[10px] tracking-[0.2em] text-muted-foreground uppercase">Capital</span>
         </Link>
@@ -68,7 +68,7 @@ export function Footer() {
     <footer className="mt-20 bg-ink text-white">
       <div className="px-5 py-14">
         <div className="flex items-center gap-2 mb-8">
-          <span className="font-display text-2xl">S25</span>
+          <span className="font-display text-2xl">Mirandil</span>
           <span className="gold-line" />
           <span className="font-mono text-[10px] tracking-[0.2em] uppercase opacity-60">Capital</span>
         </div>
@@ -104,14 +104,14 @@ export function Footer() {
 
         <div className="border-t border-white/10 pt-6 space-y-2">
           <p className="font-mono text-[10px] tracking-[0.15em] uppercase opacity-50">
-            S25 Capital Holdings, Inc.
+            Mirandil Capital Holdings, Inc.
           </p>
           <p className="text-xs opacity-55">
             One Reserve Plaza, 25th Floor<br />
             New York, NY 10004
           </p>
           <p className="text-xs opacity-40 pt-4">
-            © {new Date().getFullYear()} S25 Capital. All rights reserved. Member FINRA / SIPC.
+            © {new Date().getFullYear()} Mirandil Capital. All rights reserved. Member FINRA / SIPC.
           </p>
         </div>
       </div>

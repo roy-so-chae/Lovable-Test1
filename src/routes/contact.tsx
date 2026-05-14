@@ -4,8 +4,8 @@ import { PageShell, PageHeader, Eyebrow } from "@/components/page-parts";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — S25 Capital" },
-      { name: "description", content: "Reach the right team at S25 Capital." },
+      { title: "Contact — Mirandil Capital" },
+      { name: "description", content: "Reach the right team at Mirandil Capital." },
     ],
   }),
   component: ContactPage,

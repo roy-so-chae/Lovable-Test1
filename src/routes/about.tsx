@@ -4,8 +4,8 @@ import { PageShell, PageHeader, NextPage, Eyebrow, Quote } from "@/components/pa
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — S25 Capital" },
-      { name: "description", content: "Founded in 1987, S25 Capital is built on long-term partnership and disciplined stewardship." },
+      { title: "About — Mirandil Capital" },
+      { name: "description", content: "Founded in 1987, Mirandil Capital is built on long-term partnership and disciplined stewardship." },
     ],
   }),
   component: AboutPage,
@@ -24,7 +24,7 @@ function AboutPage() {
       <section className="px-5 py-12">
         <Eyebrow num="01.1">Our Founding</Eyebrow>
         <p className="text-base leading-relaxed text-foreground/80">
-          S25 began in a single office on lower Broadway with $25 million in committed capital and
+          Mirandil began in a single office on lower Broadway with $25 million in committed capital and
           a single mandate: to find businesses worth owning forever. Today we steward over $847
           billion across five operating sectors, but our mandate remains unchanged.
         </p>
