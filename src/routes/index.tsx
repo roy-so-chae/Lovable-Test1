@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell, Eyebrow } from "@/components/page-parts";
+import heroImage from "@/assets/hero-risk.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
