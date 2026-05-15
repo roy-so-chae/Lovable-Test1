@@ -2,6 +2,8 @@
 
 Lovable로 제작한 프로젝트입니다.
 
+> 📥 **브라우저에서 보기 / 다운로드**: [`/readme.html`](./public/readme.html) 파일을 크롬에서 열거나, 배포된 사이트의 [`/readme.html`](https://id-preview--138139c2-24fc-4e1f-9479-c85b1a0cf20f.lovable.app/readme.html) 주소로 접속하면 스타일링된 과제 설명을 보고 HTML/PDF로 저장할 수 있습니다.
+
 ## 과제 설명
 
 가상의 자산운용사 **Mirandil Capital** (설립 1987)의 공식 웹사이트를 구현한 과제입니다.
