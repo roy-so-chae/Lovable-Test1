@@ -22,8 +22,9 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
       <div className="flex items-center justify-between px-5 h-16">
-        <Link to="/" className="flex items-center" onClick={() => setOpen(false)}>
+        <Link to="/" className="flex items-baseline" onClick={() => setOpen(false)}>
           <span className="font-brand text-[1.85rem] leading-none text-primary">Mirandil</span>
+          <span className="font-brand text-[1.1rem] leading-none text-gold ml-[1px]">.ai</span>
         </Link>
         <button
           aria-label="menu"
