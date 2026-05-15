@@ -68,9 +68,8 @@ function HomePage() {
           </div>
         </div>
 
-        <div className="mb-7 flex items-baseline">
-          <span className="font-brand text-[3.6rem] leading-none text-primary">Mirandil</span>
-          <span className="font-brand text-[2rem] leading-none text-gold ml-[2px]">.ai</span>
+        <div className="mb-7">
+          <span className="font-brand text-[3.6rem] leading-none text-primary">Mirandil.ai</span>
         </div>
 
         <Eyebrow num="00">AI Risk Engine</Eyebrow>

@@ -23,8 +23,7 @@ export function Header() {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur border-b border-border">
       <div className="flex items-center justify-between px-5 h-16">
         <Link to="/" className="flex items-baseline" onClick={() => setOpen(false)}>
-          <span className="font-brand text-[1.85rem] leading-none text-primary">Mirandil</span>
-          <span className="font-brand text-[1.1rem] leading-none text-gold ml-[1px]">.ai</span>
+          <span className="font-brand text-[1.85rem] leading-none text-primary">Mirandil.ai</span>
         </Link>
         <button
           aria-label="menu"
@@ -62,9 +61,8 @@ export function Footer() {
   return (
     <footer className="mt-20 bg-ink text-white">
       <div className="px-5 py-14">
-        <div className="mb-8 flex items-baseline">
-          <span className="font-brand text-3xl leading-none">Mirandil</span>
-          <span className="font-brand text-xl leading-none text-gold ml-[1px]">.ai</span>
+        <div className="mb-8">
+          <span className="font-brand text-3xl leading-none">Mirandil.ai</span>
         </div>
         <p className="font-display text-2xl leading-snug mb-10 text-white/95">
           Stewards of capital.<br />Builders of enduring value.
