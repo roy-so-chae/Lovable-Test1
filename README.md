@@ -2,7 +2,16 @@
 
 Lovable로 제작한 프로젝트입니다.
 
-> 📥 **브라우저에서 보기 / 다운로드**: [`/readme.html`](./public/readme.html) 파일을 크롬에서 열거나, 배포된 사이트의 [`/readme.html`](https://id-preview--138139c2-24fc-4e1f-9479-c85b1a0cf20f.lovable.app/readme.html) 주소로 접속하면 스타일링된 과제 설명을 보고 HTML/PDF로 저장할 수 있습니다.
+## 🌐 실제 웹사이트 보기 (Live Demo)
+
+> 👉 **[웹사이트 바로 열기](https://id-preview--138139c2-24fc-4e1f-9479-c85b1a0cf20f.lovable.app)** ← 이 링크를 클릭하면 실제 렌더링된 Mirandil Capital 웹사이트가 크롬에서 바로 열립니다.
+
+| 종류 | 주소 |
+|------|------|
+| 🏠 메인 사이트 | https://id-preview--138139c2-24fc-4e1f-9479-c85b1a0cf20f.lovable.app |
+| 📄 스타일된 README (HTML) | https://id-preview--138139c2-24fc-4e1f-9479-c85b1a0cf20f.lovable.app/readme.html |
+
+> ⚠️ GitHub에서 `.html` 파일을 클릭하면 **소스코드**가 표시됩니다. 실제 렌더링된 페이지를 보려면 위 링크를 사용하세요.
 
 ## 과제 설명
 
