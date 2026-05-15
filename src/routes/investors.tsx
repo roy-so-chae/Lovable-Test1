@@ -4,8 +4,8 @@ import { PageShell, PageHeader, NextPage, Eyebrow, Stat } from "@/components/pag
 export const Route = createFileRoute("/investors")({
   head: () => ({
     meta: [
-      { title: "Investor Relations — Mirandil Capital" },
-      { name: "description", content: "Financial reports, shareholder letters, and stock information for Mirandil Capital." },
+      { title: "Investor Relations — Mirandil" },
+      { name: "description", content: "Financial reports, shareholder letters, and stock information for Mirandil." },
     ],
   }),
   component: InvestorsPage,

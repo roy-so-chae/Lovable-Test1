@@ -4,7 +4,7 @@ import { PageShell, PageHeader, NextPage, Eyebrow, Stat } from "@/components/pag
 export const Route = createFileRoute("/responsibility")({
   head: () => ({
     meta: [
-      { title: "Responsibility — Mirandil Capital" },
+      { title: "Responsibility — Mirandil" },
       { name: "description", content: "Our approach to governance, sustainability, and the communities we serve." },
     ],
   }),

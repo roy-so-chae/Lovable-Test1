@@ -4,8 +4,8 @@ import { PageShell, PageHeader, NextPage, Eyebrow } from "@/components/page-part
 export const Route = createFileRoute("/leadership")({
   head: () => ({
     meta: [
-      { title: "Leadership — Mirandil Capital" },
-      { name: "description", content: "Meet the executive committee and board of directors of Mirandil Capital." },
+      { title: "Leadership — Mirandil" },
+      { name: "description", content: "Meet the executive committee and board of directors of Mirandil." },
     ],
   }),
   component: LeadershipPage,

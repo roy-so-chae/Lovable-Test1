@@ -4,7 +4,7 @@ import { PageShell, PageHeader, NextPage, Eyebrow, Quote } from "@/components/pa
 export const Route = createFileRoute("/careers")({
   head: () => ({
     meta: [
-      { title: "Careers — Mirandil Capital" },
+      { title: "Careers — Mirandil" },
       { name: "description", content: "Join a firm built on judgment, character, and the long view." },
     ],
   }),
@@ -80,7 +80,7 @@ function CareersPage() {
           ))}
         </div>
         <p className="text-xs opacity-50 mt-8 leading-relaxed">
-          Mirandil Capital is an equal opportunity employer. We hire on the basis of judgment,
+          Mirandil is an equal opportunity employer. We hire on the basis of judgment,
           character, and the work — and on no other basis.
         </p>
       </section>
