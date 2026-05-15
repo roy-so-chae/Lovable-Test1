@@ -1,10 +1,10 @@
-# Mirandil Capital — AI-Driven Risk Detection
+# Mirandil — AI-Driven Risk Detection
 
 Lovable로 제작한 프로젝트입니다.
 
 ## 🌐 실제 웹사이트 보기 (Live Demo)
 
-> 👉 **[웹사이트 바로 열기](https://id-preview--138139c2-24fc-4e1f-9479-c85b1a0cf20f.lovable.app)** ← 이 링크를 클릭하면 실제 렌더링된 Mirandil Capital 웹사이트가 크롬에서 바로 열립니다.
+> 👉 **[웹사이트 바로 열기](https://id-preview--138139c2-24fc-4e1f-9479-c85b1a0cf20f.lovable.app)** ← 이 링크를 클릭하면 실제 렌더링된 Mirandil 웹사이트가 크롬에서 바로 열립니다.
 
 | 종류 | 주소 |
 |------|------|
@@ -15,7 +15,7 @@ Lovable로 제작한 프로젝트입니다.
 
 ## 과제 설명
 
-가상의 자산운용사 **Mirandil Capital** (설립 1987)의 공식 웹사이트를 구현한 과제입니다.
+가상의 자산운용사 **Mirandil** (설립 1987)의 공식 웹사이트를 구현한 과제입니다.
 "AI가 먼저 리스크를 본다(See risk first)"라는 철학을 기반으로, 단 세 가지 자산
 (**USD · QQQ · SPY**)만 운용하는 방어형 투자 전략을 브랜드 사이트로 표현합니다.
 

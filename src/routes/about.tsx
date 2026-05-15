@@ -4,8 +4,8 @@ import { PageShell, PageHeader, NextPage, Eyebrow, Quote } from "@/components/pa
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Mirandil Capital" },
-      { name: "description", content: "Founded in 1987, Mirandil Capital is built on long-term partnership and disciplined stewardship." },
+      { title: "About — Mirandil" },
+      { name: "description", content: "Founded in 1987, Mirandil is built on long-term partnership and disciplined stewardship." },
     ],
   }),
   component: AboutPage,
