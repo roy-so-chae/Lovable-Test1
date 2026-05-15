@@ -62,8 +62,9 @@ export function Footer() {
   return (
     <footer className="mt-20 bg-ink text-white">
       <div className="px-5 py-14">
-        <div className="mb-8">
+        <div className="mb-8 flex items-baseline">
           <span className="font-brand text-3xl leading-none">Mirandil</span>
+          <span className="font-brand text-xl leading-none text-gold ml-[1px]">.ai</span>
         </div>
         <p className="font-display text-2xl leading-snug mb-10 text-white/95">
           Stewards of capital.<br />Builders of enduring value.
