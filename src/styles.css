@@ -35,7 +35,7 @@
   --color-ring: var(--ring);
 
   --font-display: "Cormorant Garamond", "Times New Roman", serif;
-  --font-brand: "Italiana", "Cormorant Garamond", serif;
+  --font-brand: "Cormorant Garamond", "Times New Roman", serif;
   --font-sans: "Inter", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
@@ -80,9 +80,8 @@
   .font-mono { font-family: var(--font-mono); }
   .font-brand {
     font-family: var(--font-brand);
-    font-weight: 400;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.04em;
     font-feature-settings: "liga", "dlig";
   }
 }
