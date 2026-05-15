@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mirandil Capital — 과제 설명 (README)</title>
+<style>
+  :root{--bg:#0b0d10;--fg:#e7eaee;--muted:#9aa3ad;--accent:#d4b86a;--card:#13161b;--border:#23272e}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.65}
+  .wrap{max-width:860px;margin:0 auto;padding:48px 24px 96px}
+  h1{font-size:32px;letter-spacing:-.01em;margin:0 0 8px}
+  h2{font-size:22px;margin:40px 0 12px;border-bottom:1px solid var(--border);padding-bottom:8px}
+  h3{font-size:17px;margin:24px 0 8px;color:var(--accent)}
+  p,li{color:var(--fg)}
+  .lead{color:var(--muted);margin-top:0}
+  table{width:100%;border-collapse:collapse;margin:12px 0 24px;font-size:14px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--border)}
+  th{color:var(--muted);font-weight:500}
+  code,pre{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  code{background:var(--card);padding:2px 6px;border-radius:4px;font-size:13px}
+  pre{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:16px;overflow:auto;font-size:13px}
+  .toolbar{display:flex;gap:8px;margin:24px 0 0;flex-wrap:wrap}
+  button,a.btn{background:var(--accent);color:#1a1a1a;border:0;border-radius:6px;padding:8px 14px;font-size:14px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
+  a.btn.secondary{background:transparent;color:var(--fg);border:1px solid var(--border)}
+  hr{border:0;border-top:1px solid var(--border);margin:48px 0 24px}
+  footer{color:var(--muted);font-size:13px}
+  @media print{body{background:#fff;color:#000}.toolbar{display:none}h2{border-color:#ddd}pre,code{background:#f5f5f5}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Mirandil Capital — AI-Driven Risk Detection</h1>
+  <p class="lead">Lovable로 제작한 프로젝트 — 과제 설명 문서 (README)</p>
+
+  <div class="toolbar">
+    <button onclick="window.print()">PDF로 저장 / 인쇄</button>
+    <a class="btn secondary" href="/readme.html" download="Mirandil-Capital-README.html">HTML 다운로드</a>
+  </div>
+
+  <h2>과제 설명</h2>
+  <p>가상의 자산운용사 <strong>Mirandil Capital</strong> (설립 1987)의 공식 웹사이트를 구현한 과제입니다.
+  "AI가 먼저 리스크를 본다(See risk first)"라는 철학을 기반으로, 단 세 가지 자산
+  (<strong>USD · QQQ · SPY</strong>)만 운용하는 방어형 투자 전략을 브랜드 사이트로 표현합니다.</p>
+
+  <h3>핵심 컨셉</h3>
+  <ul>
+    <li><strong>AI 리스크 감지</strong>: 거시·지정학·시장 시그널을 24/7 모니터링</li>
+    <li><strong>품질 자산만 보유</strong>: USD, QQQ, SPY 세 가지로 단순화</li>
+    <li><strong>리스크 발생 시 후퇴</strong>: 자산을 매도하고 달러로 대피</li>
+    <li><strong>리스크 해소 시 복귀</strong>: 동일한 품질 자산으로 재진입, 복리 재개</li>
+  </ul>
+
+  <h2>페이지 구성</h2>
+  <table>
+    <thead><tr><th>경로</th><th>설명</th></tr></thead>
+    <tbody>
+      <tr><td><code>/</code></td><td>홈 — 4가지 운용 원칙과 사이트 내비게이션</td></tr>
+      <tr><td><code>/about</code></td><td>회사 철학과 1987년부터의 역사</td></tr>
+      <tr><td><code>/leadership</code></td><td>운용진 소개</td></tr>
+      <tr><td><code>/businesses</code></td><td>AI 리스크 엔진 작동 방식(전략)</td></tr>
+      <tr><td><code>/investments</code></td><td>현재 보유 포지션</td></tr>
+      <tr><td><code>/insights</code></td><td>마켓 코멘터리 / 투자 서한</td></tr>
+      <tr><td><code>/investors</code></td><td>투자자 리포트 및 공시</td></tr>
+      <tr><td><code>/careers</code></td><td>채용</td></tr>
+      <tr><td><code>/responsibility</code></td><td>사회적 책임</td></tr>
+      <tr><td><code>/contact</code></td><td>연락처</td></tr>
+    </tbody>
+  </table>
+
+  <h2>기술 스택</h2>
+  <ul>
+    <li><strong>Framework</strong>: TanStack Start v1 (React 19 + Vite 7)</li>
+    <li><strong>Styling</strong>: Tailwind CSS v4 (semantic tokens in <code>src/styles.css</code>)</li>
+    <li><strong>UI</strong>: shadcn/ui 컴포넌트</li>
+    <li><strong>Routing</strong>: TanStack Router (file-based, <code>src/routes/</code>)</li>
+    <li><strong>배포</strong>: Cloudflare Workers (edge runtime)</li>
+  </ul>
+
+  <h2>폴더 구조</h2>
+<pre>src/
+├── routes/         # 파일 기반 라우트 (페이지)
+├── components/     # 재사용 UI 컴포넌트
+│   └── ui/         # shadcn/ui 프리미티브
+├── hooks/          # 커스텀 React 훅
+├── lib/            # 유틸리티
+├── styles.css      # Tailwind + 디자인 토큰
+└── router.tsx      # 라우터 부트스트랩</pre>
+
+  <h2>개발</h2>
+<pre>bun install
+bun run dev</pre>
+
+  <hr/>
+  <footer>Made with <a href="https://lovable.dev" style="color:var(--accent)">Lovable</a>.</footer>
+</div>
+</body>
+</html>
