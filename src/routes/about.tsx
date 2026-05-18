@@ -47,7 +47,44 @@ function AboutPage() {
       </section>
 
       <section className="px-5 py-16">
-        <Eyebrow num="01.2">Timeline</Eyebrow>
+        <Eyebrow num="01.2">The Name</Eyebrow>
+        <h2 className="font-display text-3xl text-primary mb-6 leading-tight">
+          Mirandil — <span className="italic text-gold">Friend of the Jewel.</span>
+        </h2>
+        <p className="text-base leading-relaxed text-foreground/80 mb-8">
+          The name <em>Mirandil</em> is drawn from the languages of J.R.R. Tolkien, formed from
+          two Elvish roots:
+        </p>
+        <div className="space-y-4 mb-8">
+          <div className="grid grid-cols-[80px_1fr] gap-4 border-t border-border pt-4">
+            <div className="font-display text-2xl text-gold">mir</div>
+            <div>
+              <div className="font-display text-lg text-primary">"jewel, precious thing"</div>
+              <div className="text-sm text-muted-foreground mt-1">
+                Quenya — that which is rare, lasting, and worth guarding. For us, the client's capital.
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-[80px_1fr] gap-4 border-t border-border pt-4">
+            <div className="font-display text-2xl text-gold">-(n)dil</div>
+            <div>
+              <div className="font-display text-lg text-primary">"devoted friend, steward"</div>
+              <div className="text-sm text-muted-foreground mt-1">
+                Quenya suffix denoting selfless devotion — not ownership, but loyal service to what
+                is entrusted.
+              </div>
+            </div>
+          </div>
+        </div>
+        <p className="text-base leading-relaxed text-foreground/80 border-l-2 border-gold pl-4">
+          Together: <strong className="text-primary">Mirandil</strong> — one devoted to the jewel.
+          A steward of what is precious. It is the posture we take toward every dollar under our care:
+          AI watches, the Founder answers, and the asset is protected first.
+        </p>
+      </section>
+
+      <section className="px-5 py-16 border-t border-border">
+        <Eyebrow num="01.3">Timeline</Eyebrow>
         <div className="space-y-8">
           {[
             { y: "2027.07", t: "Founded", d: "AI engineers and quant traders come together." },
