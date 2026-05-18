@@ -114,7 +114,7 @@ function AboutPage() {
       </section>
 
       <section className="px-5 py-16">
-        <Eyebrow num="01.3">What We Believe</Eyebrow>
+        <Eyebrow num="01.4">What We Believe</Eyebrow>
         <div className="space-y-6">
           {[
             "Machines see risk before humans do.",
