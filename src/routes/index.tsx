@@ -4,11 +4,11 @@ import { PageShell, Eyebrow } from "@/components/page-parts";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mirandil.ai — AI-Native Risk Intelligence" },
+      { title: "Mirandil — AI-Native Risk Intelligence" },
       {
         name: "description",
         content:
-          "Mirandil.ai — AI가 먼저 리스크를 봅니다. 1987년 설립, 단 세 자산(USD·QQQ·SPY)으로 운용하는 AI 네이티브 자산운용사.",
+          "Mirandil — AI가 먼저 리스크를 봅니다. 1987년 설립, 단 세 자산(USD·QQQ·SPY)으로 운용하는 AI 네이티브 자산운용사.",
       },
     ],
   }),
@@ -69,7 +69,7 @@ function HomePage() {
         </div>
 
         <div className="mb-7">
-          <span className="font-brand text-[3.6rem] leading-none text-primary">Mirandil.ai</span>
+          <span className="font-brand text-[3.6rem] leading-none text-primary">Mirandil</span>
         </div>
 
         <Eyebrow num="00">AI Risk Engine</Eyebrow>
