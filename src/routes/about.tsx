@@ -21,15 +21,16 @@ function AboutPage() {
       <PageHeader
         num="01"
         eyebrow="About"
-        title="AI sees risk first."
-        lede="Mirandil is an AI-native fintech startup founded on July 1, 2027. Not a traditional asset manager — a new kind of investment firm where AI agents monitor markets and allocate capital."
+        title="Run by AI and the Founder."
+        lede="Mirandil is an AI-native fintech startup founded on July 1, 2027. The entire firm is operated by two parties — autonomous AI agents and a single Founder. No committees. No analysts. No legacy desks."
       />
 
       <section className="px-5 py-12">
         <Eyebrow num="01.1">Our Founding</Eyebrow>
         <p className="text-base leading-relaxed text-foreground/80">
-          Mirandil was founded on July 1, 2027 by a small team of AI engineers and quant traders.
-          Our thesis is simple — machines see macro risk before humans do. On top of that signal,
+          Mirandil was founded on July 1, 2027. From day one, the firm has been operated by AI and
+          the Founder — together. AI agents monitor global risk and execute the rotation; the Founder
+          sets the mandate, owns the outcomes, and signs every letter. On top of that partnership,
           we run capital through only three assets: USD, QQQ, and SPY.
         </p>
       </section>
