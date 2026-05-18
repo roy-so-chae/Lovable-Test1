@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "Mirandil is an AI-native fintech startup founded on July 1, 2027. Our AI agents detect risk first and allocate capital across just three assets.",
+          "Mirandil is an AI-native fintech startup founded on July 1, 2027. Run by AI and the Founder — no committees, no analysts. Just three assets.",
       },
     ],
   }),
