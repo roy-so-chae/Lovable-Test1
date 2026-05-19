@@ -19,14 +19,13 @@ function AboutPage() {
   return (
     <PageShell>
       <PageHeader
-        num="01"
         eyebrow="About"
         title="Run by AI and the Founder."
         lede="Mirandil is an AI-native fintech startup founded on July 1, 2027. The entire firm is operated by two parties — autonomous AI agents and a single Founder. No committees. No analysts. No legacy desks."
       />
 
       <section className="px-5 py-12">
-        <Eyebrow num="01.1">Our Founding</Eyebrow>
+        <h2 className="font-display text-3xl text-primary mb-6 leading-tight">Our Founding</h2>
         <p className="text-base leading-relaxed text-foreground/80">
           Mirandil was founded on July 1, 2027. From day one, the firm has been operated by AI and
           the Founder — together. AI agents monitor global risk and execute the rotation; the Founder
@@ -47,9 +46,8 @@ function AboutPage() {
       </section>
 
       <section className="px-5 py-16">
-        <Eyebrow num="01.2">The Name</Eyebrow>
         <h2 className="font-display text-3xl text-primary mb-6 leading-tight">
-          Mirandil — <span className="italic text-gold">Friend of the Jewel.</span>
+          The Name — <span className="italic text-gold">Friend of the Jewel.</span>
         </h2>
         <p className="text-base leading-relaxed text-foreground/80 mb-8">
           The name <em>Mirandil</em> is drawn from the languages of J.R.R. Tolkien, formed from
@@ -84,7 +82,7 @@ function AboutPage() {
       </section>
 
       <section className="px-5 py-16 border-t border-border">
-        <Eyebrow num="01.3">Timeline</Eyebrow>
+        <h2 className="font-display text-3xl text-primary mb-6 leading-tight">Timeline</h2>
         <div className="space-y-8">
           {[
             { y: "2027.07", t: "Founded", d: "AI engineers and quant traders come together." },
@@ -114,7 +112,7 @@ function AboutPage() {
       </section>
 
       <section className="px-5 py-16">
-        <Eyebrow num="01.4">What We Believe</Eyebrow>
+        <h2 className="font-display text-3xl text-primary mb-6 leading-tight">What We Believe</h2>
         <div className="space-y-6">
           {[
             "Machines see risk before humans do.",
