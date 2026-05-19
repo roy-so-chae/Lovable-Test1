@@ -72,7 +72,7 @@ function HomePage() {
           <span className="font-brand text-[3.6rem] leading-none text-primary">Mirandil</span>
         </div>
 
-        <Eyebrow num="00">AI Risk Engine</Eyebrow>
+        <div className="eyebrow mb-4 text-sm tracking-[0.3em]">AI Risk Engine</div>
         <h1 className="font-display text-[44px] leading-[1.02] tracking-tight text-primary">
           See risk first.
           <br />
@@ -144,7 +144,7 @@ function HomePage() {
 
       {/* Four principles */}
       <section className="px-5 py-14">
-        <Eyebrow num="01">Method</Eyebrow>
+        <div className="eyebrow mb-4">Method</div>
         <h2 className="font-display text-3xl text-primary mb-8 leading-tight">
           A simple rule,<br />in four steps.
         </h2>
@@ -165,7 +165,7 @@ function HomePage() {
 
       {/* Track record */}
       <section className="px-5 py-12 bg-secondary">
-        <Eyebrow num="02">Track Record</Eyebrow>
+        <div className="eyebrow mb-4">Track Record</div>
         <h2 className="font-display text-3xl text-primary mb-8 leading-tight">
           Through every<br />cycle.
         </h2>
@@ -191,7 +191,7 @@ function HomePage() {
 
       {/* Navigation hub */}
       <section className="px-5 py-14">
-        <Eyebrow num="03">Explore</Eyebrow>
+        <div className="eyebrow mb-4">Explore</div>
         <h2 className="font-display text-3xl text-primary mb-8 leading-tight">
           Where would you<br />like to begin?
         </h2>
