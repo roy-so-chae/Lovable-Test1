@@ -191,7 +191,7 @@ function HomePage() {
 
       {/* Navigation hub */}
       <section className="px-5 py-14">
-        <Eyebrow num="03">Explore</Eyebrow>
+        <div className="eyebrow mb-4">Explore</div>
         <h2 className="font-display text-3xl text-primary mb-8 leading-tight">
           Where would you<br />like to begin?
         </h2>
