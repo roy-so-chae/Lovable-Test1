@@ -72,7 +72,7 @@ function HomePage() {
           <span className="font-brand text-[3.6rem] leading-none text-primary">Mirandil</span>
         </div>
 
-        <Eyebrow num="00">AI Risk Engine</Eyebrow>
+        <div className="eyebrow mb-4 text-sm tracking-[0.3em]">AI Risk Engine</div>
         <h1 className="font-display text-[44px] leading-[1.02] tracking-tight text-primary">
           See risk first.
           <br />
