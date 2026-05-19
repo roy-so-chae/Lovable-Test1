@@ -144,7 +144,7 @@ function HomePage() {
 
       {/* Four principles */}
       <section className="px-5 py-14">
-        <Eyebrow num="01">Method</Eyebrow>
+        <div className="eyebrow mb-4">Method</div>
         <h2 className="font-display text-3xl text-primary mb-8 leading-tight">
           A simple rule,<br />in four steps.
         </h2>
