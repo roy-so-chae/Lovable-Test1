@@ -19,7 +19,6 @@ function AboutPage() {
   return (
     <PageShell>
       <PageHeader
-        num="01"
         eyebrow="About"
         title="Run by AI and the Founder."
         lede="Mirandil is an AI-native fintech startup founded on July 1, 2027. The entire firm is operated by two parties — autonomous AI agents and a single Founder. No committees. No analysts. No legacy desks."

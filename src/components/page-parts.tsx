@@ -30,14 +30,14 @@ export function PageHeader({
   title,
   lede,
 }: {
-  num: string;
-  eyebrow: string;
+  num?: string;
+  eyebrow?: string;
   title: string;
   lede?: string;
 }) {
   return (
     <section className="px-5 pt-10 pb-12 border-b border-border fade-in">
-      <Eyebrow num={num}>{eyebrow}</Eyebrow>
+      {eyebrow && (num ? <Eyebrow num={num}>{eyebrow}</Eyebrow> : <div className="eyebrow mb-4">{eyebrow}</div>)}
       <h1 className="font-display text-[44px] leading-[1.05] tracking-tight text-primary">{title}</h1>
       {lede && <p className="mt-6 text-base leading-relaxed text-muted-foreground">{lede}</p>}
     </section>
