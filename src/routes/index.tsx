@@ -211,7 +211,7 @@ function HomePage() {
 
       {/* Letter quote */}
       <section className="px-5 py-14 bg-primary text-primary-foreground">
-        <div className="eyebrow mb-6 text-gold">Letter to Shareholders</div>
+        <div className="eyebrow mb-6 text-lg tracking-[0.3em] text-gold">Letter to Shareholders</div>
         <p className="font-display text-2xl leading-snug italic">
           "We do not predict the market.
           We detect risk, preserve quality, and return."
