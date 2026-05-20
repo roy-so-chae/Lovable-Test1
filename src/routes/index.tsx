@@ -160,7 +160,7 @@ function HomePage() {
 
       {/* Track record */}
       <section className="px-5 py-12 bg-secondary">
-        <div className="eyebrow mb-4">Track Record</div>
+        <div className="eyebrow mb-4 text-lg tracking-[0.3em]">Track Record</div>
         <h2 className="font-display text-3xl text-primary mb-8 leading-tight">
           Through every<br />cycle.
         </h2>
