@@ -186,7 +186,7 @@ function HomePage() {
 
       {/* Navigation hub */}
       <section className="px-5 py-14">
-        <div className="eyebrow mb-4">Explore</div>
+        <div className="eyebrow mb-4 text-base tracking-[0.3em]">Explore</div>
         <h2 className="font-display text-3xl text-primary mb-8 leading-tight">
           Where would you<br />like to begin?
         </h2>
@@ -198,10 +198,7 @@ function HomePage() {
               className="flex items-center justify-between py-5 border-b border-border first:border-t group"
             >
               <div className="flex-1 pr-4">
-                <div className="font-mono text-[10px] text-muted-foreground tracking-[0.2em]">
-                  {c.num}
-                </div>
-                <div className="font-display text-xl text-primary mt-1 group-hover:text-gold transition-colors">
+                <div className="font-display text-xl text-primary group-hover:text-gold transition-colors">
                   {c.label}
                 </div>
                 <div className="text-xs text-muted-foreground mt-1">{c.desc}</div>
