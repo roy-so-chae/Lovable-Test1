@@ -151,13 +151,8 @@ function HomePage() {
         <div className="space-y-0">
           {principles.map((p) => (
             <div key={p.num} className="py-5 border-t border-border first:border-t last:border-b">
-              <div className="flex items-baseline gap-4">
-                <span className="font-mono text-[10px] text-gold tracking-[0.25em]">{p.num}</span>
-                <div className="flex-1">
-                  <div className="font-display text-xl text-primary">{p.title}</div>
-                  <div className="text-sm text-muted-foreground mt-1">{p.desc}</div>
-                </div>
-              </div>
+              <div className="font-display text-xl text-primary">{p.title}</div>
+              <div className="text-sm text-muted-foreground mt-1">{p.desc}</div>
             </div>
           ))}
         </div>
