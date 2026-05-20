@@ -72,7 +72,7 @@ function HomePage() {
           <span className="font-brand text-[3.6rem] leading-none text-primary">Mirandil</span>
         </div>
 
-        <div className="eyebrow mb-4 text-sm tracking-[0.3em]">AI Risk Engine</div>
+        <div className="eyebrow mb-4 text-lg tracking-[0.3em]">AI Risk Engine</div>
         <h1 className="font-display text-[44px] leading-[1.02] tracking-tight text-primary">
           See risk first.
           <br />
@@ -144,7 +144,7 @@ function HomePage() {
 
       {/* Four principles */}
       <section className="px-5 py-14">
-        <div className="eyebrow mb-4">Method</div>
+        <div className="eyebrow mb-4 text-lg tracking-[0.3em]">Method</div>
         <h2 className="font-display text-3xl text-primary mb-8 leading-tight">
           A simple rule,<br />in four steps.
         </h2>
@@ -160,7 +160,7 @@ function HomePage() {
 
       {/* Track record */}
       <section className="px-5 py-12 bg-secondary">
-        <div className="eyebrow mb-4">Track Record</div>
+        <div className="eyebrow mb-4 text-lg tracking-[0.3em]">Track Record</div>
         <h2 className="font-display text-3xl text-primary mb-8 leading-tight">
           Through every<br />cycle.
         </h2>
@@ -186,7 +186,7 @@ function HomePage() {
 
       {/* Navigation hub */}
       <section className="px-5 py-14">
-        <div className="eyebrow mb-4 text-base tracking-[0.3em]">Explore</div>
+        <div className="eyebrow mb-4 text-lg tracking-[0.3em]">Explore</div>
         <h2 className="font-display text-3xl text-primary mb-8 leading-tight">
           Where would you<br />like to begin?
         </h2>
@@ -211,7 +211,7 @@ function HomePage() {
 
       {/* Letter quote */}
       <section className="px-5 py-14 bg-primary text-primary-foreground">
-        <div className="eyebrow mb-6 text-gold">Letter to Shareholders</div>
+        <div className="eyebrow mb-6 text-lg tracking-[0.3em] text-gold">Letter to Shareholders</div>
         <p className="font-display text-2xl leading-snug italic">
           "We do not predict the market.
           We detect risk, preserve quality, and return."
