@@ -18,11 +18,13 @@ export const Route = createFileRoute("/about")({
 function AboutPage() {
   return (
     <PageShell>
-      <PageHeader
-        eyebrow="About"
-        title="Run by AI and the Founder."
-        lede="Mirandil is an AI-native fintech startup founded on July 1, 2027. The entire firm is operated by two parties — autonomous AI agents and a single Founder. No committees. No analysts. No legacy desks."
-      />
+      <section className="px-5 pt-10 pb-12 border-b border-border fade-in">
+        <div className="font-display text-5xl tracking-[0.15em] text-gold mb-8 uppercase">About</div>
+        <h1 className="text-base leading-relaxed text-primary font-medium">Run by AI and the Founder.</h1>
+        <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+          Mirandil is an AI-native fintech startup founded on July 1, 2027. The entire firm is operated by two parties — autonomous AI agents and a single Founder. No committees. No analysts. No legacy desks.
+        </p>
+      </section>
 
       <section className="px-5 py-12">
         <h2 className="font-display text-3xl text-primary mb-6 leading-tight">Our Founding</h2>
