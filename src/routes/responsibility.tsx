@@ -15,14 +15,14 @@ function ResponsibilityPage() {
   return (
     <PageShell>
       <PageHeader
-        num="06"
+
         eyebrow="Responsibility"
         title="Capital with conscience."
         lede="A long-term investor cannot be indifferent to the world its capital helps build. Stewardship is not a department at Mirandil — it is the work itself."
       />
 
       <section className="px-5 py-12">
-        <Eyebrow num="06.1">Pillars</Eyebrow>
+        <Eyebrow>Pillars</Eyebrow>
         <div className="space-y-8">
           {[
             {
@@ -61,7 +61,7 @@ function ResponsibilityPage() {
       </section>
 
       <section className="px-5 py-12 bg-cream border-y border-border">
-        <Eyebrow num="06.2">Impact, in figures</Eyebrow>
+        <Eyebrow>Impact, in figures</Eyebrow>
         <div className="grid grid-cols-2 gap-x-6 gap-y-8 mt-6">
           <Stat value="$1.2" suffix="B" label="Foundation Grants" />
           <Stat value="$48" suffix="B" label="Transition Capital" />
@@ -71,7 +71,7 @@ function ResponsibilityPage() {
       </section>
 
       <section className="px-5 py-12">
-        <Eyebrow num="06.3">Reporting</Eyebrow>
+        <Eyebrow>Reporting</Eyebrow>
         <div className="space-y-3">
           {[
             "TCFD Climate Disclosure 2024",

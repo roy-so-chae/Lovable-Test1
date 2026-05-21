@@ -15,14 +15,14 @@ function InvestmentsPage() {
   return (
     <PageShell>
       <PageHeader
-        num="04"
+
         eyebrow="Investment Approach"
         title="Concentrated. Conservative. Compounding."
         lede="We are not in the business of being interesting. We are in the business of being right, slowly, with great consistency."
       />
 
       <section className="px-5 py-12">
-        <Eyebrow num="04.1">Allocation</Eyebrow>
+        <Eyebrow>Allocation</Eyebrow>
         <div className="space-y-3">
           {[
             ["Public Equity", 38, "$322B"],
@@ -69,7 +69,7 @@ function InvestmentsPage() {
       </section>
 
       <section className="px-5 py-12">
-        <Eyebrow num="04.2">Selected Holdings</Eyebrow>
+        <Eyebrow>Selected Holdings</Eyebrow>
         <div className="space-y-0">
           {[
             ["Heritage Trust Co.", "Wholly owned since 2011", "Banking"],

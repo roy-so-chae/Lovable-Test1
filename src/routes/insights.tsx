@@ -41,14 +41,14 @@ function InsightsPage() {
   return (
     <PageShell>
       <PageHeader
-        num="05"
+
         eyebrow="Research & Insights"
         title="Letters, research, and the long view."
         lede="We write so that we may think more clearly. We publish so that our partners may hold us to account."
       />
 
       <section className="px-5 py-12">
-        <Eyebrow num="05.1">Featured</Eyebrow>
+        <Eyebrow>Featured</Eyebrow>
         <div className="space-y-8">
           {features.map((a) => (
             <article key={a.title} className="bg-cream border border-border p-6">
@@ -72,7 +72,7 @@ function InsightsPage() {
       </section>
 
       <section className="px-5 py-12 border-t border-border">
-        <Eyebrow num="05.2">Archive</Eyebrow>
+        <Eyebrow>Archive</Eyebrow>
         <div className="space-y-0">
           {articles.map(([cat, title, date, read]) => (
             <article key={title} className="py-5 border-t border-border first:border-t-0">
