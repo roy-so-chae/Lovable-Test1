@@ -23,12 +23,11 @@ const execs = [
 export default function LeadershipPage() {
   return (
     <PageShell>
-      <PageHeader
-        num="02"
-        eyebrow="Leadership"
-        title="Stewards, not celebrities."
-        lede="Our leaders are chosen for judgment, character, and the willingness to think in decades. They are paid to allocate capital wisely — and to step aside when wiser hands appear."
-      />
+      <section className="px-5 pt-10 pb-12 border-b border-border fade-in">
+        <div className="font-display text-xl tracking-[0.2em] text-gold mb-6 uppercase leading-tight">Leadership</div>
+        <h1 className="font-display text-[44px] leading-[1.05] tracking-tight text-primary">Stewards, not celebrities.</h1>
+        <p className="mt-6 text-base leading-relaxed text-muted-foreground">Our leaders are chosen for judgment, character, and the willingness to think in decades. They are paid to allocate capital wisely — and to step aside when wiser hands appear.</p>
+      </section>
 
       <section className="px-5 py-12">
         <Eyebrow num="02.1">Executive Committee</Eyebrow>
