@@ -30,7 +30,7 @@ export default function LeadershipPage() {
       </section>
 
       <section className="px-5 py-12">
-        <Eyebrow num="02.1">Executive Committee</Eyebrow>
+        <Eyebrow>Executive Committee</Eyebrow>
         <div className="space-y-0">
           {execs.map((e, i) => (
             <article key={e.name} className="border-t border-border py-6 last:border-b">

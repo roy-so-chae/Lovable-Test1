@@ -48,7 +48,7 @@ function BusinessesPage() {
   return (
     <PageShell>
       <PageHeader
-        num="03"
+
         eyebrow="Operating Businesses"
         title="Five sectors. One discipline."
         lede="We do not chase trends or rotate sectors. Each of our five operating groups is held with the same standard: durable economics, honest leadership, and a margin of safety."

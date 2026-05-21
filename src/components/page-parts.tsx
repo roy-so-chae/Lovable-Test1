@@ -14,11 +14,11 @@ export function PageShell({ children }: { children: ReactNode }) {
   );
 }
 
-export function Eyebrow({ num, children }: { num: string; children: ReactNode }) {
+export function Eyebrow({ num, children }: { num?: string; children: ReactNode }) {
   return (
     <div className="flex items-center gap-3 mb-4">
-      <span className="font-mono text-[10px] text-gold tracking-[0.25em]">{num}</span>
-      <span className="gold-line" />
+      {num && <span className="font-mono text-[10px] text-gold tracking-[0.25em]">{num}</span>}
+      {num && <span className="gold-line" />}
       <span className="eyebrow">{children}</span>
     </div>
   );
