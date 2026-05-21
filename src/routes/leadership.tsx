@@ -34,15 +34,12 @@ export default function LeadershipPage() {
         <div className="space-y-0">
           {execs.map((e, i) => (
             <article key={e.name} className="border-t border-border py-6 last:border-b">
-              <div className="flex items-start gap-4">
+              <div className="flex items-center gap-4">
                 <div className="w-16 h-16 shrink-0 bg-primary text-primary-foreground flex items-center justify-center font-display text-xl">
                   {e.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="font-mono text-[10px] text-gold tracking-[0.2em]">
-                    {String(i + 1).padStart(2, "0")}
-                  </div>
-                  <h3 className="font-display text-xl text-primary mt-1 leading-tight">{e.name}</h3>
+                  <h3 className="font-display text-xl text-primary leading-tight">{e.name}</h3>
                   <div className="text-sm text-foreground mt-1">{e.role}</div>
                   <div className="font-mono text-[10px] tracking-[0.15em] uppercase text-muted-foreground mt-2">
                     {e.tenure}
