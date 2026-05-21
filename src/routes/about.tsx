@@ -114,7 +114,7 @@ function AboutPage() {
       </section>
 
       <section className="px-5 py-16">
-        <h2 className="font-display text-3xl text-primary mb-6 leading-tight">What We Believe</h2>
+        <h2 className="font-display text-3xl tracking-[0.15em] text-gold mb-6 uppercase leading-tight">What We Believe</h2>
         <div className="space-y-6">
           {[
             "Machines see risk before humans do.",
